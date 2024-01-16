@@ -7,11 +7,21 @@
 </head>
 <body>
     <form id="miFormulario">
-        Nombre: <input type="text" name="nombre" required><br>
-        Edad: <input type="number" name="edad" required><br>
-        Correo: <input type="email" name="correo" required><br>
-        <button type="button" onclick="enviarFormulario()">Enviar</button>
+        Nombre: <input type="text" name="nombre" id="nombrecito"><br>
+        Edad: <input type="number" name="edad" id="edadcita"><br>
+        Correo: <input type="email" name="correo" id="correito"><br>
+        <button id="enviarDatos">Enviar</button>
       </form>
+      <hr>
+      <!-- Agrega esto en tu index.html -->
+<input type="text" id="inputCorreo" placeholder="Ingrese el correo...">
+<button id="buscarita">Buscar</button>
+<div id="resultado">
+    <p>Nombre: <span id="nombre"></span></p>
+  <p>Edad: <span id="edad"></span></p>
+  <p>Correo: <span id="correo"></span></p>
+</div>
+
       <script src="scripts.js"></script>
 </body>
 </html>
